@@ -11,14 +11,14 @@ header {
 .home {
 
   .content-section {
-    margin: 30px 0;
+    margin: 30px auto;
     .flex(row, space-between, flex-start);
 
     .text-content {
       width: 48%;
       padding-right: 1%;
 
-      @media @phone {
+      @media @tablet {
         width: 100%;
       }
     }
@@ -27,7 +27,8 @@ header {
       width: 48%;
       padding-left: 1%;
 
-      @media @phone {
+      @media @tablet {
+        text-align: center;
         width: 100%;
       }
 
@@ -71,16 +72,20 @@ header {
     border-top: 2px dashed @navigation-border;
     .flex(row, space-between, flex-start);
 
-    @media @phone {
-      .flex(row, center, flex-start);
+    @media @tablet {
+      justify-content: center;
     }
 
     .destination {
       width: 25%;
       margin-bottom: 30px;
 
-      @media @phone {
+      @media @tablet {
         width: 75%;
+      }
+
+      @media @phone {
+        width: 90%;
       }
 
       .btn {

@@ -12,6 +12,14 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
+
+  @media @tablet {
+    text-align: center;
+  }
+  
+  @media @phone {
+    text-align: start;
+  }
 }
 
 h1 {
@@ -44,7 +52,7 @@ img {
   width: 100%;
   margin: 0 auto;
   
-  @media @phone {
+  @media @tablet {
     padding: 0 5%;
   }
 }
