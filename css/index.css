@@ -169,12 +169,11 @@ img {
   margin: 0 auto;
 }
 .nav-wrapper {
-  width: 100%;
+  padding: 2rem 0;
   border-bottom: 2px dashed #C0C0C0;
 }
 .nav-wrapper nav {
   max-width: 800px;
-  margin: 2rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -206,7 +205,7 @@ img {
 header h2 {
   margin-top: 0.5em;
 }
-header .container {
+header .header-section {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
