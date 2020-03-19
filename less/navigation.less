@@ -1,1 +1,22 @@
 // Navigation Styles here
+.nav-wrapper {
+  width: 100%;
+  border-bottom: 2px dashed @navigation-border;
+
+  nav {
+    max-width: 800px;
+    margin: 2rem auto;
+    .flex(row, space-between, center);
+  
+    .links {
+      width: 48%;
+      .flex(row, space-evenly, center);
+  
+      a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
