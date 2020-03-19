@@ -12,20 +12,24 @@ header {
 
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flex(row, space-between, flex-start);
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -36,6 +40,7 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    flex-wrap: wrap-reverse;
 
     .text-content {
       padding-left: 1%;
@@ -52,6 +57,10 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -60,12 +69,19 @@ header {
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex(row, space-between, flex-start);
+
+    @media @phone {
+      .flex(row, center, flex-start);
+    }
 
     .destination {
       width: 25%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 75%;
+      }
 
       .btn {
         .custom-btn(@eastern-blue, @white, 1.6rem, 100%, 10px);
