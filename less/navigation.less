@@ -6,10 +6,25 @@
   nav {
     max-width: 800px;
     .flex(row, space-between, center);
+
+    @media @phone {
+      .flex(column, space-between, center);
+    }
+
+    h1 {
+      @media @phone {
+        font-size: 3.2rem;
+      }
+    }
   
     .links {
       width: 48%;
       .flex(row, space-evenly, center);
+
+      @media @phone {
+        width: 100%;
+        margin-top: 3rem;
+      }
   
       a {
         text-decoration: none;
