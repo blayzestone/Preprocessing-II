@@ -1,1 +1,40 @@
 // Navigation Styles here
+.nav-wrapper {
+  padding: 2rem 0;
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @phone {
+    padding: 1rem 0;
+  }
+
+  nav {
+    max-width: 800px;
+    .flex(row, space-between, center);
+
+    @media @phone {
+      .flex(column, space-between, center);
+    }
+  
+    .links {
+      width: 48%;
+      .flex(row, space-evenly, center);
+
+      @media @tablet {
+        width: 60%;
+        justify-content: space-around;
+      }
+
+      @media @phone {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 1.5rem;
+      }
+  
+      a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
